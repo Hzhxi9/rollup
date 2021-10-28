@@ -17,6 +17,8 @@
     "@rollup/plugin-image": "^2.1.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "^8.3.0",
+    "autoprefixer": "8.0.0",
+    "cssnano": "^5.0.8",
     "lodash": "^4.17.21",
     "rollup": "^2.58.3",
     "rollup-plugin-babel": "^4.4.0",

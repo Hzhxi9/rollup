@@ -59,6 +59,12 @@ import alias from '@rollup/plugin-alias';
 /**可视化并分析您的Rollup捆绑包，以查看哪些模块占用了空间。 */
 import { visualizer } from 'rollup-plugin-visualizer';
 
+/**给css3的一些属性添加前缀 */
+import autoprefixer from 'autoprefixer';
+
+/**css压缩 */
+import cssnano from 'cssnano';
+
 const path = require('path');
 const resolveDir = dir => path.join(__dirname, dir);
 
@@ -131,6 +137,8 @@ export default {
       entries: [{ find: '@', replacement: resolveDir('src') }],
     }),
     image(),
+    // autoprefixer(),
+    // cssnano(),
     livereload(),
     serve({
       open: true,
